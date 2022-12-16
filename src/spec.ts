@@ -2,9 +2,16 @@ import 'jasmine';
 import { Browser, Builder, By, until } from 'selenium-webdriver';
 import { Options } from 'selenium-webdriver/chrome';
 import { faker } from '@faker-js/faker';
+
 import { PageDriverController } from './page_driver/page_driver';
+
 import { Auth, AddSalary, DeleteSalary, DeleteUser } from './test_scripts/test_scripts';
+
 const PAGE_URL = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
+
+
+
+
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 300000;
 let driverController: PageDriverController;
