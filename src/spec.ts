@@ -2,8 +2,11 @@ import 'jasmine';
 import { Browser, Builder, By, until } from 'selenium-webdriver';
 import { Options } from 'selenium-webdriver/chrome';
 import { faker } from '@faker-js/faker';
+
 import { PageDriverController } from './page_driver/page_driver';
+
 import { Auth, AddSalary, DeleteSalary, DeleteUser } from './test_scripts/test_scripts';
+
 const PAGE_URL = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 300000;
@@ -26,7 +29,7 @@ afterEach(async () => {
 });
 
 describe('something', () => {
-  it('authorization should work', async () => {
+  it('authorization works', async () => {
     await Auth(driverController);
 
     await driverController.wait(until.elementLocated(By.css('.oxd-sidepanel-body')));
@@ -34,7 +37,7 @@ describe('something', () => {
     expect(!!(await driverController.getElementByCss('.oxd-sidepanel-body'))).toEqual(true);
   });
 
-  it('add job pay grades record must work normal ', async () => {
+  it('add job pay grades ', async () => {
     const [minSalary, maxSalary] = await AddSalary(driverController, randName);
 
     const isMinSalaryDisplayCorrect = await driverController.isElementContainThisText({
@@ -51,7 +54,7 @@ describe('something', () => {
     expect(isMinSalaryDisplayCorrect).toBe(true);
   });
 
-  it('remove job pay grades record must work normal ', async () => {
+  it('remove job pay grades ', async () => {
     await DeleteSalary(driverController);
 
     const allFieldAfterDelete = driverController.getAllElementByCss('.orangehrm-bottom-container > div');
@@ -63,7 +66,7 @@ describe('something', () => {
     }
   });
 
-  it('added job pay grades display in admin panel', async () => {
+  it('added job pay grades display in the panel', async () => {
     const [isCurrencyDeleted, isUserInfoRecordDeleted] = await DeleteUser(driverController, randName);
 
     expect(isCurrencyDeleted).toBe(true);
