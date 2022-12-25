@@ -8,6 +8,7 @@
   "scripts": {
     "lint:js": "npx eslint \"src/**/*.{ts,tsx}\" --resolve-plugins-relative-to . --max-warnings=0",
     "lint": "npm run lint:js",
+    "build": "tsc && tsc-alias -p tsconfig.json",
     "test": "ts-node ../node_modules/jasmine/bin/jasmine --config=jasmine.json"
   },
   "dependencies": {
