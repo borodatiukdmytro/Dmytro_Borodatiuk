@@ -1,4 +1,4 @@
-import { PageDriverController } from '../../page-driver-constroller/page-driver-controller';
+import { PageDriverController } from '../../page_driver/page_driver';
 import { By } from 'selenium-webdriver';
 
 const DeleteSalary = async (driverController: PageDriverController): Promise<void> => {
