@@ -1,3 +1,6 @@
+## Requirements
+1) Installed chrome webdriver
+2) Screen size >= 1500px
 ## Step 1
 Go to the root of the project
 
