@@ -1,11 +1,8 @@
----------------------------REQUIREMENTS--------------------------------
+##Step 1
+Go to the root of the project
 
-1) installed chrome webdriver
-2) screen size >= 1500px 
+##Step 2
+Clone project to your device
 
--------------------------HOW TO RUN------------------------------------
-
-1) go to root of project 
-2) use  'npm run test -w tasks' command 
-
-
+##Step 3
+To run use  'npm run test -w tasks' command 
