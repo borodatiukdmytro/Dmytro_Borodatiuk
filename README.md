@@ -1,9 +1,11 @@
-# Dmytro_Borodatiuk
-# Selenium task Borodatiuk Dmytro
-Instruction:
-## Step 1:
-Get to the project window
-## Step 2:
-Clone project to you local computer
-## Step 3:
-To run use 'npm run test -w tasks' command
+---------------------------REQUIREMENTS--------------------------------
+
+1) installed chrome webdriver
+2) screen size >= 1500px 
+
+-------------------------HOW TO RUN------------------------------------
+
+1) go to root of project 
+2) use  'npm run test -w tasks' command 
+
+
