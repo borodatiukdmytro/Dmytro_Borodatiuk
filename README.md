@@ -5,7 +5,7 @@ Click on 'get token' button to get your unique token
 ## Step 3:
 Clone the project to your computer
 ## Step 4:
-Add your token in the code and save project
+Add your token in the code (as const TOKEN) and save project
 ## Step 5:
 Install npm packages using command 'npm i'
 ## Step 6: 
